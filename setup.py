@@ -8,7 +8,7 @@ import sys
 
 from distutils.core import setup
 
-setup(name              = 'rutgers-repoutils',
+setup(name              = 'rutgers-repository-utils',
       version           = '1.0',
       description       = 'Python scripts for repository management',
       author            = 'Open System Solutions',
@@ -19,6 +19,6 @@ setup(name              = 'rutgers-repoutils',
       long_description  = """These Python scripts are based on yum-utils and
                              createrepo. Together, they create repository
                              directories and do dependency checking.""",
-      packages          = ['rutgers-repoutils'],
-      package_dir       = {'rutgers-repoutils' : 'lib'},
+      packages          = ['repoutils'],
+      package_dir       = {'repoutils' : 'lib'},
       scripts           = ['bin/repoclosure'])
