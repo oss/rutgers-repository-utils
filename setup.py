@@ -9,7 +9,7 @@ import sys
 from distutils.core import setup
 
 setup(name              = 'rutgers-repository-utils',
-      version           = '1.0',
+      version           = '1.1',
       description       = 'Python scripts for repository management',
       author            = 'Open System Solutions',
       author_email      = 'oss@oss.rutgers.edu',
