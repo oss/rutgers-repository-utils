@@ -1,7 +1,7 @@
 %{!?python_sitelib: %global python_sitelib %(%{__python} -c "from distutils.sysconfig import get_python_lib; print(get_python_lib())")}
 
 Name:		rutgers-repository-utils
-Version:	1.1
+Version:	1.2
 Release:	1%{?dist}
 Summary:	Python scripts for miscellaneous repository management
 Group:		System Environment/Base
@@ -38,9 +38,6 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(-,root,root,-)
 %doc LICENSE README.md
-%{_bindir}/repoclosure
 %{python_sitelib}/rutgers-repository-utils/
 
 %changelog
-* Fri Jan 24 2014 Kyle Suarez <kds124@nbcs.rutgers.edu> - 1.0
-- First build for Rutgers CentOS 6

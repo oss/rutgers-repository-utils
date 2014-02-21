@@ -20,5 +20,4 @@ setup(name              = 'rutgers-repository-utils',
                              createrepo. Together, they create repository
                              directories and do dependency checking.""",
       packages          = ['repoutils'],
-      package_dir       = {'repoutils' : 'lib'},
-      scripts           = ['bin/repoclosure'])
+      package_dir       = {'repoutils' : 'lib'})
