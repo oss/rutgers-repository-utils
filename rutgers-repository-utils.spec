@@ -1,7 +1,7 @@
 %{!?python_sitelib: %global python_sitelib %(%{__python} -c "from distutils.sysconfig import get_python_lib; print(get_python_lib())")}
 
 Name:		rutgers-repository-utils
-Version:	1.2
+Version:	1.3
 Release:	1%{?dist}
 Summary:	Python scripts for miscellaneous repository management
 Group:		System Environment/Base
@@ -30,7 +30,7 @@ python setup.py build
 
 %install
 rm -rf $RPM_BUILD_ROOT
-python setup.py install -01 --skip-build --root=$RPM_BUILD_ROOT
+python setup.py install --skip-build --root=$RPM_BUILD_ROOT
 
 %clean
 rm -rf $RPM_BUILD_ROOT
@@ -39,5 +39,6 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(-,root,root,-)
 %doc LICENSE README.md
 %{python_sitelib}/rutgers-repository-utils/
+%{python_sitelib}/rutgers_repository_utils-%{version}-py2.6.egg-info
 
 %changelog
